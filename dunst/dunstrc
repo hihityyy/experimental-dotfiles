@@ -1,0 +1,29 @@
+[global]
+font = Iosevka Nerd Font 12
+format = "<b>%s</b>\n%b"
+alignment = left
+vertical_alignment = center
+show_indicators = no
+frame_width = 1
+frame_color = "#3c3836"
+corner_radius = 0
+offset = (6, 6)
+separator_height = 2
+padding = 8
+horizontal_padding = 8
+line_height = 0
+
+[urgency_low]
+background = "#fbf1c7"
+foreground = "#3c3836"
+timeout = 3
+
+[urgency_normal]
+background = "#ebdbb2"
+foreground = "#3c3836"
+timeout = 3
+
+[urgency_critical]
+background = "#cc241d"
+foreground = "#3c3836"
+timeout = 3

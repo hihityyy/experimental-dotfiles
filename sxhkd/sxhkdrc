@@ -1,0 +1,56 @@
+super + Return
+    kitty
+
+super + q
+    bspc node -c
+
+super + w
+    ~/.config/sh/wallpaperpicker.sh
+
+super + f
+    bspc node -t ~fullscreen
+
+super + d
+    rofi -show drun
+
+super + v
+    bspc node -t ~floating
+
+super + {1-9,0}
+    bspc desktop -f {1-9,10}
+
+super + shift + {1-9,0}
+    bspc node -d {1-9,10}
+
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
+
+super + shift + {h,j,k,l}
+    bspc node -s {west,south,north,east}
+
+super + r
+    pkill -USR1 -x sxhkd; pkill -USR1 -x polybar; pkill dunst; dunst
+
+super + Escape
+    ~/.config/sh/powermenu.sh
+
+super + e
+    kitty -e yazi
+
+super + i
+    kitty -e nvim
+
+super + x
+	maim -s | xclip -selection clipboard -t image/png
+
+super + shift + x
+	maim -s ~/Pictures/Screenshots/$(date +%Y.%m.%d_%H.%M.%S).png
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle

@@ -1,0 +1,42 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoxide"
+rev = "0be29a9"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:fzf"
+rev = "0be29a9"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "0be29a9"
+hash = "5b1c276b75cae91cbbdbe7863f39a540"
+
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "406ce6c"
+hash = "f5afc904d5106ee368c8aa2ded43bd74"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "e60e122"
+hash = "fbaf0adc8efc59555b748d36aab62d40"
+
+[[plugin.deps]]
+use = "llanosrocas/yaziline"
+rev = "c975c26"
+hash = "f5e051378c7ee472234ed2abdf0252e7"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:no-status"
+rev = "c591a36"
+hash = "3e023d31f29201efdac2a6ae35fedb78"
+
+[[plugin.deps]]
+use = "yazi-rs/flavors:gruvbox-light"
+rev = "1183892"
+hash = "99aa06d3014798d86001c324468d497f"
+
+[flavor]
+deps = []

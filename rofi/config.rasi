@@ -1,0 +1,21 @@
+@theme "/nix/store/f48f23crbp4nm3sidd5im4clc1rxxfzw-rofi-2.0.0/share/rofi/themes/gruvbox-light.rasi"
+configuration {
+  modi: "drun,window,run";
+  show-icons: false;
+   font: "Iosevka Nerd Font 12";
+  icon-theme: "papirus";
+  terminal: "kitty";
+  drun-display-format: "{icon} {name}";
+  disable-history: false;
+  hide-scrollbar: true;
+  dpi: 100;
+  display-drun: "";
+  location: 0;
+  fixed-num-lines: false;
+  cycle: false;
+}
+window{
+  x-offset: 0px;
+  y-offset: 0px;
+  border: 0px;
+}

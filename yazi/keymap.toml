@@ -1,0 +1,83 @@
+[mgr]
+prepend_keymap = [
+  { on = "h", run = "leave",    desc = "Go to parent" },
+  { on = "l", run = "enter",    desc = "Enter directory" },
+  { on = "j", run = "arrow 1",  desc = "Move down" },
+  { on = "k", run = "arrow -1", desc = "Move up" },
+
+  { on = "<Enter>", run = "open",               desc = "Open" },
+  { on = "o",       run = "open --interactive", desc = "Open with..." },
+
+  { on = "<Space>", run = "toggle",                desc = "Toggle select" },
+  { on = "v",       run = "visual_mode",           desc = "Visual mode" },
+  { on = "V",       run = "toggle_all --state=on", desc = "Select all" },
+  { on = "<Esc>",   run = "escape",                desc = "Escape" },
+
+  { on = ["g", "g"],       run = "arrow top",              desc = "Go to top" },
+  { on = "G",              run = "arrow bot",              desc = "Go to bottom" },
+  { on = ["g", "h"],       run = "cd ~",                   desc = "Go home" },
+  { on = ["g", "C",],      run = "cd ~/.config",           desc = "Go to config directory" },
+  { on = ["g", "c", "b",], run = "cd ~/.config/bspwm/",    desc = "Go to bspwm config" },
+  { on = ["g", "c", "s",], run = "cd ~/.config/sxhkd/",    desc = "Go to shxkd config" },
+  { on = ["g", "c", "p",], run = "cd ~/.config/polybar/",  desc = "Go to polybar config" },
+  { on = ["g", "c", "r",], run = "cd ~/.config/rofi/",     desc = "Go to rofi config" },
+  { on = ["g", "c", "y",], run = "cd ~/.config/yazi",      desc = "Go to yazi config" },
+  { on = ["g", "c", "n",], run = "cd ~/.config/nvim",      desc = "Go to nvim config" },
+  { on = ["g", "c", "f",], run = "cd ~/.config/fish",      desc = "Go to fish config" },
+  { on = ["g", "c", "k",], run = "cd ~/.config/kitty",     desc = "Go to kitty config" },
+  { on = ["g", "b"],       run = "cd ~/Books",             desc = "Go to books" },
+  { on = ["g", "d"],       run = "cd ~/Documents",         desc = "Go to documents" },
+  { on = ["g", "p"],       run = "cd ~/Pictures",          desc = "Go to pictures" },
+  { on = ["g", "v"],       run = "cd ~/Videos",            desc = "Go to videos" },
+  { on = ["g", "d"],       run = "cd ~/Downloads",         desc = "Go to downloads" },
+  { on = ["g", "r"],       run = "cd /",                   desc = "Go to root" },
+  { on = ["g", "z"],       run = "plugin zoxide",          desc = "Zoxide jump" },
+  { on = ["g", "<Space>"], run = "cd --interactive",       desc = "Go to (manual path)" },
+
+  { on = "y", run = "yank",                       desc = "Yank (copy)" },
+  { on = "x", run = "yank --cut",                 desc = "Cut" },
+  { on = "p", run = "paste",                      desc = "Paste" },
+  { on = "d", run = "remove",                     desc = "Trash" },
+  { on = "D", run = "remove --permanently",       desc = "Delete permanently" },
+  { on = "r", run = "rename --cursor=before_ext", desc = "Rename" },
+  { on = "a", run = "create",                     desc = "Create file" },
+  { on = "A", run = "create --dir",               desc = "Create dir" },
+
+  { on = ["c", "p"], run = "copy path",     desc = "Copy full path" },
+  { on = ["c", "d"], run = "copy dirname",  desc = "Copy directory" },
+  { on = ["c", "f"], run = "copy filename", desc = "Copy filename" },
+ 
+  { on = "C", run = "plugin chmod", desc = "Chmod on selected files" },
+
+  { on = ["z", "z"], run = "plugin compress", desc = "Archive as zip" },
+  { on = ["z", "t"], run = "plugin compress '-e .tar.gz'", desc = "Archive as tar.gz"},
+
+  { on = "/", run = "find --smart",          desc = "Find" },
+  { on = "n", run = "find_arrow",            desc = "Next match" },
+  { on = "N", run = "find_arrow --previous", desc = "Prev match" },
+  { on = "f", run = "filter --smart",        desc = "Filter" },
+
+  { on = "t",       run = "tab_create --current",     desc = "New tab" },
+  { on = "T",       run = "close",                    desc = "Close tab" },
+  { on = "[",       run = "tab_switch -1 --relative", desc = "Prev tab" },
+  { on = "]",       run = "tab_switch 1 --relative",  desc = "Next tab" },
+  { on = "1",       run = "tab_switch 0",             desc = "Tab 1" },
+  { on = "2",       run = "tab_switch 1",             desc = "Tab 2" },
+  { on = "3",       run = "tab_switch 2",             desc = "Tab 3" },
+  { on = "4",       run = "tab_switch 3",             desc = "Tab 4" },
+  { on = "5",       run = "tab_switch 4",             desc = "Tab 5" },
+  { on = ["<C-[>"], run = "tab_swap -1",              desc = "Swap tab left" },
+  { on = ["<C-]>"], run = "tab_swap 1",               desc = "Swap tab right" },
+
+  { on = ["s", "n"], run = "sort name --reverse=no",      desc = "Sort by name" },
+  { on = ["s", "s"], run = "sort size --reverse=yes",     desc = "Sort by size" },
+  { on = ["s", "m"], run = "sort modified --reverse=yes", desc = "Sort by date" },
+
+  { on = ".", run = "hidden toggle", desc = "Toggle hidden files" },
+  { on = "q", run = "quit",          desc = "Quit" },
+  { on = "~", run = "help",          desc = "Help" },
+
+  { on = "R", run = "shell 'exec yazi' --block", desc = "Restart yazi" },
+
+  { on = "F", run = "plugin fzf", desc = "Fzf jump" },
+]

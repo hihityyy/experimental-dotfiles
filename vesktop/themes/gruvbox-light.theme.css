@@ -1,0 +1,226 @@
+/**
+ * @name          Gruvbox Light Theme
+ */
+
+.theme-dark,
+.theme-light {
+  --subtle-corner-radius: 0px !important;
+
+  --background-primary: #f2e5bc !important;
+  --background-secondary: #fbf1c7 !important;
+  --background-secondary-alt: #f9f5d7 !important;
+  --background-tertiary: #ebdbb2 !important;
+  --background-floating: #fbf1c7 !important;
+  --background-accent: #d5c4a1 !important;
+  --background-base-lowest: #ebdbb2 !important;
+  --background-base-lower: #fbf1c7 !important;
+  --background-base-low: #f2e5bc !important;
+  --background-surface-high: #fbf1c7 !important;
+  --background-surface-higher: #d5c4a1 !important;
+  --background-surface-highest: #d5c4a1 !important;
+  --bg-surface-raised: #fbf1c7 !important;
+  --home-background: #f2e5bc !important;
+  --chat-background: #f2e5bc !important;
+  --chat-background-default: #f2e5bc !important;
+  --app-frame-background: #ebdbb2 !important;
+
+  --background-modifier-hover: rgba(60, 56, 54, 0.08) !important;
+  --background-modifier-active: rgba(60, 56, 54, 0.12) !important;
+  --background-modifier-selected: rgba(60, 56, 54, 0.15) !important;
+
+  --text-normal: #3c3836 !important;
+  --text-muted: #7c6f64 !important;
+  --text-link: #458588 !important;
+  --text-positive: #79740e !important;
+  --text-warning: #b57614 !important;
+  --text-danger: #9d0006 !important;
+  --text-brand: #458588 !important;
+  --header-primary: #282828 !important;
+  --header-secondary: #504945 !important;
+
+  --interactive-normal: #3c3836 !important;
+  --interactive-hover: #458588 !important;
+  --interactive-active: #458588 !important;
+  --interactive-muted: #928374 !important;
+
+  --channels-default: #504945 !important;
+  --channel-icon: #7c6f64 !important;
+
+  --brand-experiment: #458588 !important;
+  --brand-experiment-560: #458588 !important;
+  --brand-experiment-600: #076678 !important;
+  --brand-500: #458588 !important;
+  --blurple-50: #458588 !important;
+  --control-brand-foreground: #458588 !important;
+  --control-brand-foreground-new: #458588 !important;
+
+  --status-positive: #79740e !important;
+  --status-positive-background: #98971a !important;
+  --text-status-online: #79740e !important;
+  --status-warning: #b57614 !important;
+  --status-warning-background: #d79921 !important;
+  --text-status-idle: #b57614 !important;
+  --status-danger: #9d0006 !important;
+  --text-status-dnd: #9d0006 !important;
+  --status-danger-background: #cc241d !important;
+  --status-speaking: #79740e !important;
+
+  --control-connected-background-default: #98971a !important;
+  --control-connected-background-hover: #79740e !important;
+  --control-connected-background-active: #79740e !important;
+  --control-connected-border-default: #98971a !important;
+  --control-connected-border-hover: #79740e !important;
+  --control-connected-border-active: #79740e !important;
+
+  --button-positive-background: #98971a !important;
+  --button-positive-background-hover: #79740e !important;
+  --button-positive-background-active: #79740e !important;
+
+  --control-primary-background-default: #458588 !important;
+  --control-primary-background-hover: #076678 !important;
+  --control-primary-background-active: #076678 !important;
+
+  --checkbox-background-default: #d5c4a1 !important;
+  --checkbox-border-default: #928374 !important;
+  --checkbox-background-selected-default: #458588 !important;
+  --checkbox-border-selected-default: #458588 !important;
+
+  --red-400: #9d0006 !important;
+  --red-430: #9d0006 !important;
+  --red-500: #9d0006 !important;
+  --red-530: #9d0006 !important;
+
+  --green-330: #79740e !important;
+  --green-360: #98971a !important;
+  --green-400: #98971a !important;
+  --green-430: #6c6e0c !important;
+
+  --yellow-300: #b57614 !important;
+  --yellow-330: #b57614 !important;
+  --yellow-400: #b57614 !important;
+
+  --blue-330: #458588 !important;
+  --blue-345: #458588 !important;
+  --blue-400: #458588 !important;
+  --blue-430: #076678 !important;
+  --blue-500: #458588 !important;
+  --blue-530: #076678 !important;
+
+  --scrollbar-thin-thumb: #d5c4a1 !important;
+  --scrollbar-auto-thumb: #d5c4a1 !important;
+  --scrollbar-auto-track: #f2e5bc !important;
+
+  --voice-color: #79740e !important;
+  --text-feedback-positive: #79740e !important;
+  --icon-feedback-positive: #79740e !important;
+
+  --bg-mod-faint: #ebdbb2 !important;
+  --bg-mod-subtle: #d5c4a1 !important;
+  --bg-mod-strong: #bdae93 !important;
+}
+
+* {
+  border-radius: var(--subtle-corner-radius) !important;
+}
+
+[class*="avatar_"],
+img[class*="avatar_"],
+div[class*="avatar_"],
+svg[class*="avatar_"],
+.wrapper_edb6e0 {
+  border-radius: 50% !important;
+}
+
+code,
+pre,
+#app-mount [class*="markup"] code,
+#app-mount [class*="markup"] pre,
+div[class*="embed_"],
+div[class*="embedWrapper_"],
+div[class*="reaction_"],
+section[class*="panels_"],
+[class*="message_"],
+[class*="channel_"],
+[class*="guild_"],
+[class*="button_"],
+[class*="input_"],
+[class*="textarea_"] {
+  border-radius: var(--subtle-corner-radius) !important;
+}
+
+foreignObject[mask],
+[class*="avatar_"],
+img[class*="avatar_"],
+div[class*="avatar_"],
+svg[class*="avatar_"],
+.wrapper_edb6e0 {
+  -webkit-mask: none !important;
+  mask: none !important;
+}
+
+div[class*="embed_"],
+div[class*="embedWrapper_"] {
+  background-color: var(--background-floating) !important;
+  border-left: 0px solid var(--blue-400) !important;
+}
+
+div[class*="reaction_"] {
+  background-color: var(--background-secondary-alt) !important;
+  border: 0px solid var(--background-accent) !important;
+}
+
+div[class*="reactionMe_"] {
+  background-color: rgba(69, 133, 136, 0.2) !important;
+  border: 0px solid var(--blue-400) !important;
+}
+
+div[class*="mentioned_"] {
+  background-color: rgba(181, 118, 20, 0.12) !important;
+}
+
+div[class*="mentioned_"]::before {
+  background-color: var(--yellow-300) !important;
+}
+
+section[class*="panels_"] {
+  flex-shrink: 0 !important;
+  min-height: 52px !important;
+  background-color: var(--background-tertiary) !important;
+}
+
+section[class*="panels_"] button[class*="button_"] {
+  background-color: var(--background-modifier-active) !important;
+  color: var(--text-normal) !important;
+}
+
+section[class*="panels_"] button[class*="button_"]:hover {
+  background-color: var(--blue-400) !important;
+  color: var(--header-primary) !important;
+}
+
+section[class*="panels_"] button[class*="button_"][aria-checked="true"],
+section[class*="panels_"] button[class*="button_"][aria-expanded="true"] {
+  background-color: var(--blue-400) !important;
+  color: var(--header-primary) !important;
+}
+
+section[class*="panels_"] button[class*="button_"][aria-checked="true"]:hover,
+section[class*="panels_"] button[class*="button_"][aria-expanded="true"]:hover {
+  background-color: var(--blue-430) !important;
+}
+
+.listItem__650eb {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wrapper__58105,
+.childWrapper__58105 {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+.icon__67ab1 {
+    padding: 0 !important;
+    background-color: transparent !important;
+}

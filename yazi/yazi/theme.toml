@@ -1,0 +1,103 @@
+[manager]
+cwd = { fg = "#7c6f64" }
+
+hovered         = { fg = "#fbf1c7", bg = "#458588" }
+preview_hovered = { fg = "#fbf1c7", bg = "#458588" }
+
+find_keyword  = { fg = "#d79921", bold = true }
+find_position = { fg = "#b16286", bg = "reset", bold = true }
+
+marker_copied   = { fg = "#98971a", bg = "#98971a" }
+marker_cut      = { fg = "#cc241d", bg = "#cc241d" }
+marker_marked   = { fg = "#b16286", bg = "#b16286" }
+marker_selected = { fg = "#d79921", bg = "#d79921" }
+
+tab_active   = { fg = "#fbf1c7", bg = "#458588" }
+tab_inactive = { fg = "#3c3836", bg = "#ebdbb2" }
+
+count_copied   = { fg = "#fbf1c7", bg = "#98971a" }
+count_cut      = { fg = "#fbf1c7", bg = "#cc241d" }
+count_selected = { fg = "#fbf1c7", bg = "#d79921" }
+
+border_symbol = "│"
+border_style  = { fg = "#928374" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#928374", bg = "#ebdbb2" }
+
+mode_normal = { fg = "#fbf1c7", bg = "#458588", bold = true }
+mode_select = { fg = "#fbf1c7", bg = "#d79921", bold = true }
+mode_unset  = { fg = "#fbf1c7", bg = "#b16286", bold = true }
+
+progress_label  = { fg = "#3c3836", bold = true }
+progress_normal = { fg = "#458588", bg = "#ebdbb2" }
+progress_error  = { fg = "#cc241d", bg = "#ebdbb2" }
+
+permissions_t = { fg = "#458588" }
+permissions_r = { fg = "#d79921" }
+permissions_w = { fg = "#cc241d" }
+permissions_x = { fg = "#98971a" }
+permissions_s = { fg = "#7c6f64" }
+
+[input]
+border   = { fg = "#458588" }
+title    = { fg = "#3c3836" }
+value    = { fg = "#3c3836" }
+selected = { fg = "#fbf1c7", bg = "#458588" }
+
+[select]
+border   = { fg = "#458588" }
+active   = { fg = "#fbf1c7", bg = "#458588" }
+inactive = { fg = "#3c3836" }
+
+[tasks]
+border  = { fg = "#458588" }
+title   = { fg = "#3c3836" }
+hovered = { fg = "#fbf1c7", bg = "#458588" }
+
+[which]
+mask            = { bg = "#ebdbb2" }
+cand            = { fg = "#458588" }
+rest            = { fg = "#7c6f64" }
+desc            = { fg = "#b16286" }
+separator       = "  "
+separator_style = { fg = "#928374" }
+
+[help]
+on      = { fg = "#458588" }
+run     = { fg = "#b16286" }
+desc    = { fg = "#3c3836" }
+hovered = { fg = "#fbf1c7", bg = "#458588" }
+footer  = { fg = "#3c3836", bg = "#ebdbb2" }
+
+[filetype]
+
+rules = [
+    { mime = "image/*", fg = "#b16286" },
+    { mime = "{audio,video}/*", fg = "#d79921" },
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#cc241d" },
+    { mime = "application/{pdf,doc,rtf}", fg = "#689d6a" },
+    { url = "*/", fg = "#458588" },
+    { url = "*", fg = "#3c3836" },
+]
+
+[icon]
+
+prepend_dirs = [
+    { name = "Downloads", text = "", fg = "#458588" },
+    { name = "Pictures", text = "", fg = "#458588" },
+    { name = "Videos", text = "", fg = "#458588" },
+    { name = "Documents", text = "", fg = "#458588" },
+    { name = "Music", text = "", fg = "#458588" },
+    { name = "Desktop", text = "", fg = "#458588" },
+    { name = ".config", text = "", fg = "#458588" },
+    { name = ".git", text = "", fg = "#458588" },
+    { name = "Trash", text = "", fg = "#458588" },
+]
+
+prepend_conds = [
+    { if = "dir", text = "", fg = "#458588" },
+]
+

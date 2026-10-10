@@ -1,0 +1,57 @@
+gui:
+  theme:
+    activeBorderColor:
+      - "#d79921"
+      - bold
+    inactiveBorderColor:
+      - "#928374"
+    optionsTextColor:
+      - "#458588"
+    selectedLineBgColor:
+      - "#ebdbb2"
+    cherryPickedCommitBgColor:
+      - "#d5c4a1"
+    cherryPickedCommitFgColor:
+      - "#b16286"
+    markedBaseCommitBgColor:
+      - "#fbf1c7"
+    markedBaseCommitFgColor:
+      - "#cc241d"
+    unstagedChangesColor:
+      - "#cc241d"
+    defaultFgColor:
+      - "#3c3836"
+    searchingActiveBorderColor:
+      - "#d65d0e"
+  authorColors:
+    "*": "#458588"
+  commitColor:
+    author: "#b16286"
+    hash: "#cc241d"
+    subject: "#3c3836"
+    timestamp: "#7c6f64"
+    diverged: "#d65d0e"
+  commitHashColor: "#076678"
+  commitMessageColor: "#3c3836"
+  dateTimeColor: "#7c6f64"
+  fileCommitHashColor: "#076678"
+  fileWeightColor: "#928374"
+  unstagedChangesColor: "#cc241d"
+  defaultFgColor: "#3c3836"
+  searchingActiveBorderColor: "#d65d0e"
+  fileStatusColors:
+    added: "#98971a"
+    deleted: "#cc241d"
+    modified: "#d79921"
+    renamed: "#689d6a"
+    unmerged: "#b16286"
+    untracked: "#7c6f64"
+    copied: "#458588"
+    updated-but-unmerged: "#d65d0e"
+git:
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
+os:
+  editCommand: "nvim"
+  editCommandTemplate: "nvim {{filename}}"

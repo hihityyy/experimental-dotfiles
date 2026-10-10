@@ -24,19 +24,9 @@ rev = "e60e122"
 hash = "fbaf0adc8efc59555b748d36aab62d40"
 
 [[plugin.deps]]
-use = "llanosrocas/yaziline"
-rev = "c975c26"
-hash = "f5e051378c7ee472234ed2abdf0252e7"
-
-[[plugin.deps]]
 use = "yazi-rs/plugins:no-status"
 rev = "c591a36"
 hash = "3e023d31f29201efdac2a6ae35fedb78"
-
-[[plugin.deps]]
-use = "yazi-rs/flavors:gruvbox-light"
-rev = "1183892"
-hash = "99aa06d3014798d86001c324468d497f"
 
 [flavor]
 deps = []

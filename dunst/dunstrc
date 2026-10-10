@@ -21,9 +21,9 @@ timeout = 3
 [urgency_normal]
 background = "#ebdbb2"
 foreground = "#3c3836"
-timeout = 3
+timeout = 5
 
 [urgency_critical]
 background = "#cc241d"
 foreground = "#3c3836"
-timeout = 3
+timeout = 7

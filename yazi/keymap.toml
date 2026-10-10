@@ -17,6 +17,7 @@ prepend_keymap = [
   { on = "G",              run = "arrow bot",              desc = "Go to bottom" },
   { on = ["g", "h"],       run = "cd ~",                   desc = "Go home" },
   { on = ["g", "C",],      run = "cd ~/.config",           desc = "Go to config directory" },
+  { on = ["g", "l",],      run = "cd ~/.local",            desc = "Go to local directory" },
   { on = ["g", "c", "b",], run = "cd ~/.config/bspwm/",    desc = "Go to bspwm config" },
   { on = ["g", "c", "s",], run = "cd ~/.config/sxhkd/",    desc = "Go to shxkd config" },
   { on = ["g", "c", "p",], run = "cd ~/.config/polybar/",  desc = "Go to polybar config" },

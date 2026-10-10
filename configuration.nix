@@ -49,36 +49,38 @@ fonts.packages = with pkgs; [
   nixpkgs.config.allowUnfree = true;
   programs.fish.enable = true;
   environment.systemPackages = with pkgs; [
-     bspwm
-     btop
-     cargo
-     dunst
-     feh
-     fish
-     gcc
-     git
-     imv
-     kitty
-     lazygit
-     libnotify
-     librewolf
-     lsd
-     maim
-     mpv
-     mupdf
-     neovim
-     pfetch
-     polybar
-     rofi
-     rustc
-     sxhkd
-     vesktop
-     wget
-     xclip
-     xkb-switch
-     xprop
-     yazi 
- ];
+    yazi
+    pactl
+    avizo
+    lsd
+    pfetch
+    rustc
+    cargo
+    wget
+    fish
+    git
+    neovim
+    bspwm
+    sxhkd
+    kitty
+    rofi
+    feh
+    lazygit
+    librewolf
+    xclip
+    btop
+    polybar
+    gcc
+    maim
+    dunst
+    libnotify
+    xkb-switch
+    xprop
+    imv
+    mpv
+    mupdf
+    vesktop
+  ];
 
   system.stateVersion = "26.05";
 }

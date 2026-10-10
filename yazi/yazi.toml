@@ -1,0 +1,64 @@
+[mgr]
+ratio          = [1, 2, 4]
+sort_by        = "natural"
+sort_sensitive = false
+sort_reverse   = false
+sort_dir_first = true
+show_hidden    = false
+show_symlink   = true
+linemode       = "size"
+
+[opener]
+edit = [
+    { run = 'nvim %s', block = true, desc = "Neovim" },
+]
+image = [
+    { run = 'imv %s', orphan = true, desc = "imv" },
+]
+video = [
+    { run = 'mpv %s', orphan = true, desc = "mpv" },
+]
+audio = [
+    { run = 'mpv %s', orphan = true, desc = "mpv" },
+]
+pdf = [
+    { run = 'mupdf %s', orphan = true, desc = "mupdf" },
+]
+open = [
+    { run = 'xdg-open %s', orphan = true, desc = "Open (xdg)" },
+]
+extract = [
+    { run = 'ya pub extract --list %s', desc = "Extract here" },
+]
+
+[open]
+rules = [
+    { mime = "image/*", use = "image" },
+    { mime = "video/*", use = "video" },
+    { mime = "audio/*", use = "audio" },
+    { mime = "application/pdf", use = "pdf" },
+    { mime = "application/zip", use = "extract" },
+    { mime = "application/x-tar", use = "extract" },
+    { mime = "application/x-7z-compressed", use = "extract" },
+    { mime = "application/x-rar", use = "extract" },
+    { mime = "*", use = "edit" },
+]
+
+[tasks]
+micro_workers    = 10
+macro_workers    = 25
+bizarre_retry    = 5
+image_alloc      = 536870912
+image_bound      = [0, 0]
+suppress_preload = false
+
+[plugin]
+preloaders = [
+    { mime = "image/*", run = "noop" },
+]
+
+[input]
+cursor_blink = false
+
+[log]
+enabled = false

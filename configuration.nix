@@ -52,6 +52,7 @@ fonts.packages = with pkgs; [
     bspwm
     btop
     cargo
+    cmatrix
     dunst
     feh
     fish

@@ -98,6 +98,6 @@ prepend_dirs = [
 ]
 
 prepend_conds = [
-    { if = "dir", text = "", fg = "#458588" },
+    { if = "dir", text = "", fg = "#458588" },
 ]
 

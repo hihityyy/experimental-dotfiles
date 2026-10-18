@@ -33,6 +33,13 @@ fonts.packages = with pkgs; [
     };
   };
 
+  services.libinput = {
+  enable = true;
+  mouse = {
+    accelSpeed = "-0.7";
+  };
+};
+
   hardware.graphics.enable = true;
   hardware.nvidia = {
     modesetting.enable = true;
@@ -50,9 +57,12 @@ fonts.packages = with pkgs; [
   programs.fish.enable = true;
   environment.systemPackages = with pkgs; [
     bspwm
-    btop
+    htop
     cargo
+    cava
+    calendar-cli
     cmatrix
+    cowsay
     dunst
     feh
     fish
@@ -74,6 +84,7 @@ fonts.packages = with pkgs; [
     rumno
     rustc
     sxhkd
+    telegram-desktop 
     vesktop
     wget
     xsecurelock

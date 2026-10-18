@@ -46,6 +46,9 @@ super + x
 super + shift + x
 	maim -s ~/Pictures/Screenshots/$(date +%Y.%m.%d_%H.%M.%S).png
 
+super + ctrl + x
+	maim ~/Pictures/Screenshots/$(date +%Y.%m.%d_%H.%M.%S).png
+
 XF86AudioRaiseVolume
     wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 

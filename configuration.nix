@@ -63,6 +63,7 @@ fonts.packages = with pkgs; [
     calendar-cli
     cmatrix
     cowsay
+    opencode
     dunst
     feh
     fish
